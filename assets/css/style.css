@@ -1,0 +1,26 @@
+html{
+  scroll-behavior:smooth;
+}
+
+ul.post-list li {
+  transition: 0.2s ease transform;
+}
+ul.post-list li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 -42px 2px rgba(0, 0, 0, 0.363);
+}
+
+.post-link {
+  font-family: 'Inter', sans-serif;
+}
+.post-pre {
+  font-family: 'Open Sans', sans-serif;
+}
+#btnScrollTop {
+  z-index: 999999;
+  position:fixed;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

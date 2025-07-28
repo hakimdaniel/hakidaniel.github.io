@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<article
+  class="post h-entry bg-body-tertiary p-3 rounded-2"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <header class="post-header mb-3">
+  <h1 class="post-title p-name" itemprop="name headline">
+    {{ page.title | escape }}
+  </h1>
+  <p class="post-meta d-flex justify-content-between flex-wrap">
+    {%- if page.author -%}
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      From:
+      <span class="p-author h-card" itemprop="name">{{ page.author }} | </span>
+      <span class="dt-published">{{ page.date | date: "%d %B %Y" }}</span>
+    </span>
+    {%- endif -%}
+    <span>
+      <i class="bi bi-clock"></i>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%d %B %Y" }}
+      </time>
+    </span>
+  </p>
+
+  <!-- Share Buttons -->
+  <div class="border-bottom border-2 p-2">
+  
+  <div class=" card-body mt-3 d-flex gap-2 align-items-center flex-wrap">
+    <!-- Facebook --><p class="m-0 p-0"><strong>Share:</strong></p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+       class="btn btn-sm btn-primary d-none d-sm-flex align-items-center"
+       target="_blank" rel="noopener">
+      <i class="bi bi-facebook me-1"></i> Facebook
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+       class="btn btn-sm btn-primary d-flex d-sm-none"
+       target="_blank" rel="noopener">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <!-- Twitter / X -->
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}"
+       class="btn btn-sm btn-info d-none d-sm-flex align-items-center"
+       target="_blank" rel="noopener">
+      <i class="bi bi-twitter me-1"></i> Twitter
+    </a>
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}"
+       class="btn btn-sm btn-info d-flex d-sm-none"
+       target="_blank" rel="noopener">
+      <i class="bi bi-twitter"></i>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/?text={{ page.url | absolute_url | url_encode }}"
+       class="btn btn-sm btn-success d-none d-sm-flex align-items-center"
+       target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp me-1"></i> WhatsApp
+    </a>
+    <a href="https://wa.me/?text={{ page.url | absolute_url | url_encode }}"
+       class="btn btn-sm btn-success d-flex d-sm-none"
+       target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Copy Link -->
+    <button onclick="copyLink()"
+            class="btn btn-sm btn-secondary d-none d-sm-flex align-items-center">
+      <i class="bi bi-clipboard me-1"></i> Copy Url
+    </button>
+    <button onclick="copyLink()"
+            class="btn btn-sm btn-secondary d-flex d-sm-none">
+      <i class="bi bi-clipboard"></i>
+    </button>
+  </div>
+  </div>
+</header>
+
+
+  <div class="post-content e-content mt-4" itemprop="articleBody">{{ content }}</div>
+<!-- share start -->
+<!-- Share Section -->
+<div class="mt-4">
+  <p><strong>Share this article:</strong></p>
+  <div class="d-flex gap-2 flex-wrap">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+       class="btn btn-primary btn-sm d-flex align-items-center gap-1"
+       target="_blank" rel="noopener">
+      <i class="bi bi-facebook"></i>
+      <span class="d-none d-sm-inline">Facebook</span>
+    </a>
+
+    <!-- Twitter / X -->
+    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}"
+       class="btn btn-info btn-sm d-flex align-items-center gap-1"
+       target="_blank" rel="noopener">
+      <i class="bi bi-twitter"></i>
+      <span class="d-none d-sm-inline">Twitter</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/?text={{ page.url | absolute_url | url_encode }}"
+       class="btn btn-success btn-sm d-flex align-items-center gap-1"
+       target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp"></i>
+      <span class="d-none d-sm-inline">WhatsApp</span>
+    </a>
+
+    <!-- Copy Link -->
+    <button onclick="copyLink()" class="btn btn-secondary btn-sm d-flex align-items-center gap-1">
+      <i class="bi bi-clipboard"></i>
+      <span class="d-none d-sm-inline">Copy Url</span>
+    </button>
+  </div>
+</div>
+<script>
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href).then(function() {
+    alert("Pautan disalin!");
+  }, function(err) {
+    alert("Gagal salin pautan");
+  });
+}
+</script>
+
+<!-- share end -->
+  {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%-
+  endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

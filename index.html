@@ -1,0 +1,83 @@
+---
+layout: default
+title: Home
+paginate: true
+---
+
+<h1>Latest Posts</h1>
+
+<ul class="post-list px-2 px-md-0">
+  {% for post in paginator.posts %}
+  <li class="px-3 card bg-body-tertiary shadow-sm">
+    <a
+      class="post-link text-decoration-none"
+      href="{{ post.url | relative_url }}"
+    >
+      <span class="post-meta">{{ post.date | date: "%d %B %Y" }}</span>
+      <h3>
+        {{ post.title }}
+        <p class="text-muted mt-2 post-pre" style="font-size: 15px">
+          {{ post.content | strip_html | truncatewords: 15 }}
+        </p>
+
+        <div
+          class="d-flex justify-content-between text-muted mt-4"
+          style="font-size: 13px"
+        >
+          {% if post.author %}
+          <div class="post-meta">
+            <i class="bi bi-person-fill"></i> From: {{post.author}}
+          </div>
+          {% endif %}
+          <div>
+            <i class="bi bi-clock"></i>
+            <time
+              class="timeago"
+              datetime="{{ post.date | date_to_xmlschema }}"
+            >
+              {{ page.date | date: "%d %B %Y %H:%M" }}</time
+            >
+          </div>
+        </div>
+      </h3></a
+    >
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="pagination d-flex justify-content-center mt-4">
+  {% if paginator.previous_page %}
+  <a
+    class="btn btn-outline-primary mx-1"
+    href="{{ paginator.previous_page_path | relative_url }}"
+    >« Previous</a
+  >
+  {% else %}
+  <a
+    class="btn btn-outline-secondary mx-1 disabled"
+    tabindex="-1"
+    aria-disabled="true"
+    >« Previous</a
+  >
+  {% endif %}
+
+  <span class="btn btn-light mx-1 disabled">
+    Page {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+
+  {% if paginator.next_page %}
+  <a
+    class="btn btn-outline-primary mx-1"
+    href="{{ paginator.next_page_path | relative_url }}"
+    >Next »</a
+  >
+  {% else %}
+  <a
+    class="btn btn-outline-secondary mx-1 disabled"
+    tabindex="-1"
+    aria-disabled="true"
+    >Next »</a
+  >
+  {% endif %}
+</div>
+<!-- Butang Kembali ke Atas -->
