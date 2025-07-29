@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Apa itu rangkaian?"
-date: 2027-07-30 00:20:21 +0800
+date: 2025-07-30 00:20:21 +0800
 categories: general
 author: hakimdaniel
 ---
 
-Rangkaian dari segi technology merupakan hubungan antara peranti dengan peranti yang lain.
+Rangkaian dari segi technology merupakan tempat peranti berkomunikasi dengan peranti yang lain.  
 Cara komputer dan komputer berkomunikasi, cara telefon bimbit terima isyarat dan hantar isyarat panggilan sesama telefon bimbit lain dan sebagainya.
 
 Analogi: kita sesama manusia berbual fizikal dengan mulut, yang mana suara kita sampai ke tempat tujuan melalui udara.
