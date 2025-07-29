@@ -17,7 +17,7 @@ Saya kerap menjelajahi website-website di malaysia untuk mengkaji dari segi kese
 
 Antara yang pernah saya temui, website yang menggunakan kata laluan **default credentials** dan mudah diteka dan juga kelemahan **SQL Injection** yang risikonya boleh mengakibatkan kebocoran data oleh pihak tidak bertanggungjawab. Selain daripada itu, saya juga pernah menemukan kelemahan **Stored XSS** boleh disalahguna untuk memanipulasi halaman web bahkan mencuri akses admin, **session hijacking**. 
 
-Bagi para developer, jangan lah fikir orang awam takkan berani cuba menceroboh sistem. Di dunia ini ada pelbagai jenis manusia, nasih baik ada yang **Responsible Disclosure & Ethics**, bagaimana jika yang sekadar mengekploitasi sistem suka-suka? Berhati-hati dan perkukuhkan lagi sistem keselamatan web, sanitize semua bahagian input bagi mengelakkan code berniat jahat (malicious code) disuntikkan pada input tersebut.
+Bagi para developer, jangan lah fikir orang awam takkan berani cuba menceroboh sistem. Di dunia ini ada pelbagai jenis manusia, nasib baik ada yang jenis **Responsible Disclosure & Ethics**, bagaimana jika yang mengekploitasi sistem suka-suka? Berhati-hati dan perkukuhkan lagi sistem keselamatan web, sanitize semua bahagian input bagi mengelakkan code berniat jahat (malicious code) disuntikkan pada input tersebut.
 
-Regards 
+Regards<br>
 ~ hakim
