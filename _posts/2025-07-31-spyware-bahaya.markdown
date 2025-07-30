@@ -24,19 +24,19 @@ Untuk tujuan simulasi.
 Saya dah sediakan aplikasi hasad yg dibina dengan android sdk versi commandline-tools, dan dicompile dengan gradle. Spyware ini akan membaca contact target.
 Anggap saya sudah yakinkan mangsa untuk install kad jemputan saya (hakikatnya adalah spyware) yang bukan berasal dari playstore.
 
-[!mobile](https://dragonforce.io/attachments/1000096700-jpg.29187/)
+![mobile](https://dragonforce.io/attachments/1000096700-jpg.29187/)
 
 Tapi saya tak sekadar mengopi, tunggu di terminal sambil mendengar 👂🏻.
 
-[!linux](https://dragonforce.io/attachments/1000096745-jpg.29188/)
+![linux](https://dragonforce.io/attachments/1000096745-jpg.29188/)
 
 Mangsa cuba buka aplikasi tersebut dan allow access ke contact kononnya aplikasi mahu simpan nombor kenalan.
 
-[!mobile2](https://dragonforce.io/attachments/1000096701-jpg.29189/)
+![mobile2](https://dragonforce.io/attachments/1000096701-jpg.29189/)
 
 Mangsa sekadar tekan allow tanpa tahu akibatnya.
 
-[!mobile3](https://dragonforce.io/attachments/1000096702-jpg.29190/)
+![mobile3](https://dragonforce.io/attachments/1000096702-jpg.29190/)
 
 Tah, ajak kawin skali. Takde ape pun lepas tekan allow? User mungkin fikir sekadar aplikasi kad ucapan biasa.
 
@@ -44,10 +44,11 @@ Sedangkan seseorang yang sedang mengopi dapat sesuatu.
 
 Seluruh maklumat contact tanpa terkecuali sampai ke komputer penyerang.
 
-[!linux2](https://dragonforce.io/attachments/1000096744-jpg.29191/)
+![linux2](https://dragonforce.io/attachments/1000096744-jpg.29191/)
 
 Kesimpulannya: sistem mungkin semakin secure dan selamat sampaikan nak bypass permission pun susah. Tapi manusia sentiasa ada titik kelemahan, itu sebab social engineering wujud.
 
 Akhir kata: Anda pilih kepada siapa anda percaya. Anda pilih apa nk buat.
-Selain dapatkan contact, para hacker atau scammer boleh dapatkan gambar atau file dari device mangsa. Kemudian contact mangsa ugut kata ada gambar tk senonoh mangsa dan sebagainya.betulkah scammer sekarang makin bijak? Kebanyakan yang saya jumpa hanya ngemis template. Sekali buat RAT, minta semua permission sekaligus tanpa sebab munasabah.
+Selain dapatkan contact, para hacker atau scammer boleh dapatkan gambar atau file dari device mangsa. Kemudian contact mangsa ugut kata ada gambar tk senonoh mangsa dan sebagainya.betulkah scammer sekarang makin bijak?           
+Kebanyakan yang saya jumpa hanya ngemis template. Sekali buat RAT, minta semua permission sekaligus tanpa sebab munasabah.
 Jangan klik atau percaya aplikasi selain dari playstore, walaupun masih ada di playstore yang jahat tapi kurang risiko.
