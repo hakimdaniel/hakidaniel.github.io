@@ -28,8 +28,8 @@ Ini sepatutnya tak dapat di buka oleh orang awam kerana IP lokal. sekadar contoh
 DNS A Record example.com => 192.168.200.10
 ```
 
-Kesimpulannya, sambungan rangkaian antara peranti kita bersambung melalui **IP address** semasa tanpa wayar. Device tk perlukan **IP** jika peranti bersambung dengan wayar. 
+Kesimpulannya, sambungan rangkaian antara peranti kita bersambung melalui **IP address**.
 
-Contoh akhir, saya mahu hantar surat (data) kepada kamu (destinasi), saya akan beri kepada poslaju (protokol internet/kaedah penghantaran) dengan beri alamat tujuan iaitu rumah kamu.
+**Contoh akhir**, saya mahu hantar surat (data) kepada kamu (destinasi), saya akan beri kepada poslaju (protokol internet/kaedah penghantaran) dengan beri alamat tujuan iaitu rumah kamu.
 
 Itu saja ringkasan mudah yang boleh saya terangkan, untuk ketahui lebih lanjut. Sila explore lebih lagi...
