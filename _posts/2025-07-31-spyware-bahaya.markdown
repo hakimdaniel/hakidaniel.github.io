@@ -53,3 +53,5 @@ Selain dapatkan contact, para hacker atau scammer boleh dapatkan gambar atau fil
 
 Kebanyakan yang saya jumpa hanya ngemis template. Sekali buat RAT, minta semua permission sekaligus tanpa sebab munasabah.
 Jangan klik atau percaya aplikasi selain dari playstore, walaupun masih ada di playstore yang jahat tapi kurang risiko.
+
+**rujukan :** forum dragonforce malaysia
